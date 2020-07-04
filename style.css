@@ -2,10 +2,41 @@ body{
     margin: 0;
     font: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
 }
 
+header{
+    background: rgb(12, 149, 12);
+    text-align: center;
+    padding-top: 64px;
+    color: azure;
+}
 header h1,
 header p {
     margin: 0;
+}
+header img {
+    max-height: 400px;
+    max-width: 200px;
+    border-radius: 20px;
+    border: 6px;
+    border-style: solid;
+    border-color: darkgreen;
+    vertical-align:bottom;
+}
 
+.btn {
+    text-decoration: none;
+    text-align: center;
+    background: darkgreen;
+    color:white;
+    display: block;
+    width: 140px;
+    line-height: 44px;
+    margin:40px auto 40px;
+    border-radius: 10px;
+}
+
+.btn:hover{
+    opacity: 0.9;
 }
