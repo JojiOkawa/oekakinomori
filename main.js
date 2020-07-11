@@ -3,12 +3,16 @@
 var request = new XMLHttpRequest();
 
 // URLを開く
-request.open('GET', URL, true);
+request.open('GET', "https://script.google.com/macros/s/AKfycbxafbXHnCT-AbarlGxzFO5RWITubteqSWgSq1fea7mlEgHnugVQ/exec", true);
 
-// レスポンスが返ってきた時の処理を記述 
+var request = new XMLHttpRequest();
+
+request.open('GET', 'https://jsonplaceholder.typicode.com/users/1', true);
+request.responseType = 'json';
+
 request.onload = function () {
-  // レスポンスが返ってきた時の処理
-}
+  var data = this.response;
+  console.log(data);
+};
 
-// リクエストをURLに送信
 request.send();
