@@ -9,6 +9,9 @@ request.responseType = 'json';
 request.onload = function () {
   var data = this.response;
   console.log(data);
+  var o = document.createElement("span");
+  o.innerHTML = data["foo"];
+  document.body.appendChild(o);
 };
 
 request.send();
